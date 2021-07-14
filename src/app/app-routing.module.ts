@@ -9,7 +9,7 @@ import { UserViewComponent }   from './user-view/user-view.component';
 import { UserCreateComponent }   from './user-create/user-create.component';
 import { UserEditComponent }   from './user-edit/user-edit.component';
 import { ArticlesComponent }   from './articles/articles.component';
-
+import { ArticleViewComponent }   from './article-view/article-view.component';
 
 // 3. Declare your routes
 const routes: Routes = [
@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'users/view/:id', component: UserViewComponent },
   { path: 'users/create', component: UserCreateComponent },
   { path: 'users/edit/:id', component: UserEditComponent },
-  { path: 'articles', component: ArticlesComponent }
+  { path: 'articles', component: ArticlesComponent },
+  { path: 'articles/view/:id', component: ArticleViewComponent }
 ];
 
 @NgModule({
