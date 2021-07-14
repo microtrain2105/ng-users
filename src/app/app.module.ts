@@ -12,6 +12,7 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ArticleViewComponent } from './article-view/article-view.component';
 import { ArticleCreateComponent } from './article-create/article-create.component';
+import { ArticleEditComponent } from './article-edit/article-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ArticleCreateComponent } from './article-create/article-create.componen
     UserEditComponent,
     ArticlesComponent,
     ArticleViewComponent,
-    ArticleCreateComponent
+    ArticleCreateComponent,
+    ArticleEditComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { UserEditComponent }   from './user-edit/user-edit.component';
 import { ArticlesComponent }   from './articles/articles.component';
 import { ArticleViewComponent }   from './article-view/article-view.component';
 import { ArticleCreateComponent }   from './article-create/article-create.component';
+import { ArticleEditComponent }   from './article-edit/article-edit.component';
 
 // 3. Declare your routes
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'users/edit/:id', component: UserEditComponent },
   { path: 'articles', component: ArticlesComponent },
   { path: 'articles/view/:id', component: ArticleViewComponent },
-  { path: 'articles/create', component: ArticleCreateComponent }
+  { path: 'articles/create', component: ArticleCreateComponent },
+  { path: 'articles/edit/:id', component: ArticleEditComponent },
 ];
 
 @NgModule({
