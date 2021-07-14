@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class ArticleViewComponent implements OnInit {
 
-  article:Article[]=[];
+  article: Article;
 
   constructor(
     private articlesService: ArticlesService,
@@ -32,5 +32,12 @@ export class ArticleViewComponent implements OnInit {
       }
     );
   }
-  
+    
+  deleteArticle(id: string): void {
+    if(confirm("Are you sure to delete " + this.article.title)) {
+      this.articlesService.deleteArticle(id).subscribe(
+        ()=>{this.router.navigate(['/articles'])}
+      );
+    }
+  }
 }
